@@ -60,6 +60,7 @@ export default function ViewAvailableTrips () {
                 console.log('bookings data:', bookings);
                 setBookingDataList(bookings);
 
+                // get all the start date time and estimated end date time from the booking data list which will form the unvailable timing list
                 if (bookings){
                     const unavailableTiming = [];
                     bookings.forEach(booking => {
